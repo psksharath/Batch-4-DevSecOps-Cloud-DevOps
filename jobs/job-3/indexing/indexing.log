@@ -1,0 +1,41 @@
+Started
+[Fri Aug 23 15:58:31 UTC 2024] Starting branch indexing...
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git ls-remote --symref -- https://github.com/psksharath/FullStack-Blogging-App.git # timeout=10
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/caches/git-d1d35a15abf4f2d68d107008fc0e3dab/.git # timeout=10
+Setting origin to https://github.com/psksharath/FullStack-Blogging-App.git
+ > git config remote.origin.url https://github.com/psksharath/FullStack-Blogging-App.git # timeout=10
+Fetching & pruning origin...
+Listing remote references...
+ > git config --get remote.origin.url # timeout=10
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git ls-remote -h -- https://github.com/psksharath/FullStack-Blogging-App.git # timeout=10
+Fetching upstream changes from origin
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --force --progress --prune -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking branches...
+  Checking branch feature2
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: feature2 (still at b4d6f159b4b2f9560a84c0ca5cd984a5691a8cc1)
+  Checking branch feature1
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: feature1 (still at 36ba5a2803493fb748c2e28c9259b352e92d98cb)
+  Checking branch develop
+      ‘Jenkinsfile’ not found
+    Does not meet criteria
+  Checking branch main
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: main (still at 0efb5f39e6eceb005d05c7207775ad3e8eaaa113)
+  Checking branch Dev
+      ‘Jenkinsfile’ found
+    Met criteria
+Changes detected: Dev (dbe58a7d7c75410d9cad34c5685aafa4cf597c28 → 36e2f146a237587fcef3b19217e095d1259cef43)
+Scheduled build for branch: Dev
+Processed 5 branches
+[Fri Aug 23 15:58:32 UTC 2024] Finished branch indexing. Indexing took 0.83 sec
+Finished: SUCCESS
